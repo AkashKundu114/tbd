@@ -11,22 +11,24 @@ form.addEventListener("submit", function (event) {
         if (users[i]["name"] == username && users[i]["password"] == password) {
             window.location = "http://www.example.com";
         }
-        
-} if (username === "") {
-    document.getElementById("show").innerHTML =
-        "<p id='error'>Please enter an Username!</p>";
 
-} if (password === "") {
-    document.getElementById("show").innerHTML =
-        "<p id='error'>Please enter an Password!</p>";
+    } 
+    
+    if (username === "") {
+        document.getElementById("show").innerHTML =
+            "<p id='error'>Please enter an Username!</p>";
 
-} if (username === "" && password === "") {
-    document.getElementById("show").innerHTML =
-        "<p id='error'>Please enter Username and Password!</p>";
-}  {
-    document.getElementById("show").innerHTML =
-        "<p id='error'>Incorrect username or password!!</p>";
+    } else if (password === "") {
+        document.getElementById("show").innerHTML =
+            "<p id='error'>Please enter an Password!</p>";
 
-}
+    } else if (username === "" && password === "") {
+        document.getElementById("show").innerHTML =
+            "<p id='error'>Please enter Username and Password!</p>";
+    } else {
+        document.getElementById("show").innerHTML =
+            "<p id='error'>Incorrect username or password!!</p>";
+
+    }
 
 });
