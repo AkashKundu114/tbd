@@ -12,7 +12,9 @@ form.addEventListener("submit", function (event) {
             window.location = "http://www.example.com";
         }
 
-    } if (username === "") {
+    } 
+    
+    if (username === "") {
         document.getElementById("show").innerHTML =
             "<p id='error'>Please enter an Username!</p>";
 
