@@ -27,7 +27,7 @@ form.addEventListener("submit", function (event) {
             "<p id='error'>Please enter Username and Password!</p>";
     } else {
         document.getElementById("show").innerHTML =
-            "<p id='error'>Incorrect username or password!!</p>";
+            "<p id='error'>Incorrect username or password!</p>";
 
     }
 
