@@ -10,8 +10,7 @@ form.addEventListener("submit", function (event) {
     for (let i = 0; i <= 11; i++) {
         if (users[i]["name"] == username && users[i]["password"] == password) {
             window.location = "http://www.example.com";
-        }
-
+          
     } if (username === "") {
         document.getElementById("show").innerHTML =
             "<p id='error'>Please enter an Username!</p>";
